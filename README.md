@@ -1,3 +1,3 @@
 # Candle Company e-Commerce
 
-This is a mock website for a local candle company.
+This is a mock website for a local candle company. Project is currently in progress.
