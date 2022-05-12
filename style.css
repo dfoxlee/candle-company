@@ -245,24 +245,25 @@ header h1 {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .about {
-  padding: 100px 0;
+  padding: 100px 0 100px;
   display: flex;
 }
 
 .about-wrapper {
   margin: auto;
-  width: 80%;
+  width: 90%;
 }
 
 .about-wrapper h2 {
   font-size: 3rem;
   text-align: center;
+  font-weight: 400;
 }
 
 .about-wrapper h2:after {
   content: "";
   display: block;
-  width: 30%;
+  width: 150px;
   height: 0.1rem;
   background-color: goldenrod;
   margin: 0 auto 30px;
@@ -272,20 +273,203 @@ header h1 {
   margin: auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
+  width: 90%;
+  max-width: 1000px;
 }
 
 .emily-edwin-image {
   width: 400px;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .about-text-image-wrapper p {
   font-size: 1.25rem;
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
 }
 
-.about-text-image-wrapper p:first-letter {
-  font-size: 4rem;
-  font-family: 'Great Vibes', cursive;
+@media only screen and (max-width: 1050px) {
+  .about {
+    padding: 100px 0 50px;
+  }
+  
+  .about-text-image-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .emily-edwin-image {
+    margin: 30px 0;
+  }
+}
+
+/* PROMOTION SECTION
+///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.promotion-wrapper h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.promotion-wrapper h2:after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 0.1rem;
+  background-color: goldenrod;
+  margin: 0 auto 30px;
+}
+
+.promotion-photo-wrapper {
+  margin: auto;
+  width: 90%;
+  max-width: 600px;
+}
+
+.promotion-image-card {
+  display: flex;
+  margin: auto;
+  width: 300px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promotion-candle-photo {
+  width: 250px;
+}
+
+.promotion-description {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.promotion-cost {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.promotion-arrow-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: auto;
+}
+
+#promotionCard2 {
+  display: none;
+}
+
+#promotionCard3 {
+  display: none;
+}
+
+#promotionCard4 {
+  display: none;
+}
+
+#promotionCard5 {
+  display: none;
+}
+
+#promotionCard6 {
+  display: none;
+}
+
+#promotionCard7 {
+  display: none;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+  font-size: 3rem;
+  transition: color 0.3s;
+}
+
+.fa-angle-left:hover,
+.fa-angle-right:hover {
+  cursor: pointer;
+  color: goldenrod;
+}
+
+/* CONTACT SECTION
+///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.form-wrapper {
+  margin: 100px auto;
+  width: 90%;
+  max-width: 500px;
+}
+
+.form-wrapper h2 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.form-wrapper h2:after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 0.1rem;
+  background-color: goldenrod;
+  margin: 0 auto 30px;
+}
+
+.form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  width: 90%;
+  max-width: 200px;
+  margin: 5px 0;
+}
+
+#comments {
+  width: 90%;
+}
+
+#submitBtn {
+  margin: 5px 0;
+  height: 50px;
+  width: 150px;
+  font-size: 1.5rem;
+  border: none;
+  background-color: goldenrod;
+  border-radius: 5px;
+  transition: box-shadow 0.3s;
+}
+
+#submitBtn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px gray;
+}
+
+#submitBtn:active {
+  box-shadow: none;
+}
+
+/* SOCIAL MEDIA SECTION
+///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.logo {
+  width: 50px;
+  margin: 0 10px;
+}
+
+.logo:hover {
+  cursor: pointer;
 }
